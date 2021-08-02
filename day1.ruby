@@ -27,3 +27,28 @@ puts y
   # 1.upto(100) do |n|
   #   puts n if n % 2 == 1
   # end
+
+
+  # p *1..100].select { |i| i.odd? 
+# for i in 1..100 do 
+#   puts i if i.odd?
+# end
+#  result = [1,2,3,4,5,6,7].select{| x |
+# x.odd?
+# }
+# p result
+
+
+
+
+# 用 reduce 找出 [5, 2, 9, 10, 7, 89, 70] 的最大值
+arr = [5, 2, 9, 10, 7, 89, 70]
+max = arr.reduce do |max, i|
+  if max > i
+    max
+  else
+    i
+  end
+end
+
+puts max
