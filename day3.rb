@@ -10,3 +10,5 @@ class Animal
   end
   class Dog < Animal
   end
+  kk = Cat.new
+  
